@@ -1,24 +1,1191 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DBU-GI-3IZ">
+    <device id="retina6_3" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HW8_SolanWishAtelier" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Pa5-Vx-gyJ">
+                                <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Lyd-iU-4Bk">
+                                <rect key="frame" x="16" y="249" width="370" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Love &amp; Memory"/>
+                                    <segment title="Power &amp; Control"/>
+                                    <segment title="Fantasy &amp; Beyond"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" red="0.75666517020000001" green="0.73148304220000004" blue="0.93874722720000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="segmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="BVX-8e-18q"/>
+                                </connections>
+                            </segmentedControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Er9-Re-93x">
+                                <rect key="frame" x="0.0" y="294" width="402" height="490"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="7Uf-qn-h1z">
+                                        <rect key="frame" x="0.0" y="0.0" width="402" height="490"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6hU-xE-Mlg">
+                                                <rect key="frame" x="0.0" y="0.0" width="402" height="490"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" id="gVs-K8-vwL" userLabel="View1">
+                                                        <rect key="frame" x="8" y="0.0" width="386" height="970"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="truelove" translatesAutoresizingMaskIntoConstraints="NO" id="wWz-IP-eu2">
+                                                                <rect key="frame" x="10" y="10" width="120" height="150"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="someoneunderstandsyou" translatesAutoresizingMaskIntoConstraints="NO" id="5F1-q6-3rW">
+                                                                <rect key="frame" x="10" y="170" width="120" height="150"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="friendshipunited" translatesAutoresizingMaskIntoConstraints="NO" id="EbB-Es-QDs">
+                                                                <rect key="frame" x="10" y="330" width="120" height="150"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="forgetsomeone" translatesAutoresizingMaskIntoConstraints="NO" id="sQq-zs-26W">
+                                                                <rect key="frame" x="10" y="490" width="120" height="150"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="petneverdie" translatesAutoresizingMaskIntoConstraints="NO" id="t4H-jT-nxf">
+                                                                <rect key="frame" x="10" y="650" width="120" height="150"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="returntooneday" translatesAutoresizingMaskIntoConstraints="NO" id="Rwi-m9-iKD">
+                                                                <rect key="frame" x="10" y="810" width="120" height="150"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u71-JR-Ata">
+                                                                <rect key="frame" x="140" y="10" width="210" height="75"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <string key="text">真愛永不離棄
+Everlasting True Love</string>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                                                <color key="textColor" red="0.19607843137254902" green="0.17254901960784313" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdd-Yi-o2d">
+                                                                <rect key="frame" x="140" y="170" width="210" height="75"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <string key="text">永遠有人懂你
+Someone Understands You</string>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                                                <color key="textColor" red="0.19607841970000001" green="0.1725490093" blue="0.2588235438" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3b-7X-m8J">
+                                                                <rect key="frame" x="140" y="330" width="210" height="75"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <string key="text">重拾失去的友情
+Lost Friendship Reunited</string>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                                                <color key="textColor" red="0.19607841970000001" green="0.1725490093" blue="0.2588235438" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIv-fK-Evt">
+                                                                <rect key="frame" x="140" y="490" width="210" height="75"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <string key="text">忘記某個人
+Forget Someone</string>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                                                <color key="textColor" red="0.19607841970000001" green="0.1725490093" blue="0.2588235438" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNI-ej-9V1">
+                                                                <rect key="frame" x="140" y="650" width="210" height="75"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <string key="text">寵物不會死去
+Your Pet Will Never Die</string>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                                                <color key="textColor" red="0.19607841970000001" green="0.1725490093" blue="0.2588235438" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmA-Sd-AAP">
+                                                                <rect key="frame" x="140" y="810" width="210" height="75"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <string key="text">重返某年某月某日
+Return to a Certain Day</string>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                                                <color key="textColor" red="0.19607841970000001" green="0.1725490093" blue="0.2588235438" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="580" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kC-Vz-uKs">
+                                                                <rect key="frame" x="183" y="79" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.19607843137254902" green="0.17254901960784313" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVC-1f-0Zg">
+                                                                <rect key="frame" x="239" y="125" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="數量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZN-PE-HKg">
+                                                                <rect key="frame" x="191" y="114" width="46" height="48"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="solan" translatesAutoresizingMaskIntoConstraints="NO" id="0nL-wg-16j">
+                                                                <rect key="frame" x="138" y="74" width="37" height="36"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="BKJ-X2-XcJ">
+                                                                <rect key="frame" x="279" y="122" width="94" height="32"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <connections>
+                                                                    <action selector="stepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="0nX-yL-HlA"/>
+                                                                </connections>
+                                                            </stepper>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="520" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7X-l2-SWW">
+                                                                <rect key="frame" x="183" y="244" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYH-vo-sLv">
+                                                                <rect key="frame" x="239" y="289" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="數量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6g-7u-e8e">
+                                                                <rect key="frame" x="191" y="278" width="46" height="48"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="solan" translatesAutoresizingMaskIntoConstraints="NO" id="rEx-X6-utz">
+                                                                <rect key="frame" x="138" y="239" width="37" height="36"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <stepper opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="VTZ-0I-R5a">
+                                                                <rect key="frame" x="279" y="286" width="94" height="32"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <connections>
+                                                                    <action selector="stepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="BZR-0P-TVB"/>
+                                                                </connections>
+                                                            </stepper>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="490" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fee-aM-o1K">
+                                                                <rect key="frame" x="183" y="405" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5eL-iB-jE4">
+                                                                <rect key="frame" x="239" y="450" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="數量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPS-bU-tVm">
+                                                                <rect key="frame" x="191" y="439" width="46" height="48"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="solan" translatesAutoresizingMaskIntoConstraints="NO" id="ube-lR-uT8">
+                                                                <rect key="frame" x="138" y="400" width="37" height="36"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <stepper opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="xFo-gk-HgH">
+                                                                <rect key="frame" x="279" y="447" width="94" height="32"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <connections>
+                                                                    <action selector="stepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="lTU-zc-nJa"/>
+                                                                </connections>
+                                                            </stepper>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="460" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTi-LV-wbE">
+                                                                <rect key="frame" x="183" y="558" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yh3-fK-3lC">
+                                                                <rect key="frame" x="239" y="603" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="數量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vP7-dO-bVz">
+                                                                <rect key="frame" x="191" y="592" width="46" height="48"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="solan" translatesAutoresizingMaskIntoConstraints="NO" id="Wlv-KB-CFs">
+                                                                <rect key="frame" x="138" y="553" width="37" height="36"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <stepper opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="rt1-lA-z0g">
+                                                                <rect key="frame" x="279" y="600" width="94" height="32"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <connections>
+                                                                    <action selector="stepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="wf0-5J-Ibw"/>
+                                                                </connections>
+                                                            </stepper>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="600" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K80-Ec-OUN">
+                                                                <rect key="frame" x="183" y="725" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Au0-vi-CtS">
+                                                                <rect key="frame" x="239" y="770" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="數量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rq3-h0-TfG">
+                                                                <rect key="frame" x="191" y="759" width="46" height="48"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="solan" translatesAutoresizingMaskIntoConstraints="NO" id="EFA-BS-dOs">
+                                                                <rect key="frame" x="138" y="720" width="37" height="36"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <stepper opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="2Nu-sZ-4GZ">
+                                                                <rect key="frame" x="279" y="767" width="94" height="32"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <connections>
+                                                                    <action selector="stepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Gmj-hC-Cl0"/>
+                                                                </connections>
+                                                            </stepper>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="750" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDH-ug-rR3">
+                                                                <rect key="frame" x="183" y="886" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vv-Yv-RNk">
+                                                                <rect key="frame" x="239" y="931" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="數量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIQ-LO-pDC">
+                                                                <rect key="frame" x="191" y="920" width="46" height="48"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="solan" translatesAutoresizingMaskIntoConstraints="NO" id="SWk-RJ-ksD">
+                                                                <rect key="frame" x="138" y="881" width="37" height="36"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <stepper opaque="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="jp9-XO-JeH">
+                                                                <rect key="frame" x="279" y="928" width="94" height="32"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <connections>
+                                                                    <action selector="stepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="gIY-VA-eRK"/>
+                                                                </connections>
+                                                            </stepper>
+                                                        </subviews>
+                                                        <viewLayoutGuide key="safeArea" id="LdS-bx-tO9"/>
+                                                        <color key="backgroundColor" red="0.94509803921568625" green="0.92549019607843142" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.94509803921568625" green="0.92549019607843142" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <viewLayoutGuide key="contentLayoutGuide" id="2YM-OS-sA3"/>
+                                                <viewLayoutGuide key="frameLayoutGuide" id="bES-wH-8Cr"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                                        <size key="value" width="0.0" height="970"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </scrollView>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="kuM-9S-LZo"/>
+                                        <color key="backgroundColor" red="0.61390650270000002" green="0.58380502460000006" blue="0.643707633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="u3t-sJ-SoJ">
+                                        <rect key="frame" x="402" y="0.0" width="402" height="490"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hmt-Jd-CjZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="402" height="490"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" id="wjL-D8-Iuh" userLabel="View2">
+                                                        <rect key="frame" x="8" y="0.0" width="386" height="970"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eideticmemory" translatesAutoresizingMaskIntoConstraints="NO" id="n3N-j6-y5H">
+                                                                <rect key="frame" x="10" y="10" width="120" height="150"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mindreading" translatesAutoresizingMaskIntoConstraints="NO" id="YCB-YN-gs4">
+                                                                <rect key="frame" x="10" y="170" width="120" height="150"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="foresightofdanger" translatesAutoresizingMaskIntoConstraints="NO" id="msZ-0X-MuX">
+                                                                <rect key="frame" x="10" y="330" width="120" height="150"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="emotionmanipulation" translatesAutoresizingMaskIntoConstraints="NO" id="NH3-jP-btc">
+                                                                <rect key="frame" x="10" y="490" width="120" height="150"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="masteroffate" translatesAutoresizingMaskIntoConstraints="NO" id="P1e-8d-u32">
+                                                                <rect key="frame" x="10" y="650" width="120" height="150"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="unstoppablecharisma" translatesAutoresizingMaskIntoConstraints="NO" id="P4l-6L-t5F">
+                                                                <rect key="frame" x="10" y="810" width="120" height="150"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGv-PS-t1g">
+                                                                <rect key="frame" x="140" y="10" width="210" height="75"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <string key="text">過目不忘的記憶力
+Eidetic Memory</string>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                                                <color key="textColor" red="0.19607841970000001" green="0.1725490093" blue="0.2588235438" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCZ-Qs-sEX">
+                                                                <rect key="frame" x="140" y="170" width="210" height="75"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <string key="text">讀心術
+Mind Reading</string>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                                                <color key="textColor" red="0.19607841970000001" green="0.1725490093" blue="0.2588235438" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1v-Jm-VF6">
+                                                                <rect key="frame" x="140" y="330" width="210" height="75"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <string key="text">預知危機
+Foresight of Danger</string>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                                                <color key="textColor" red="0.19607841970000001" green="0.1725490093" blue="0.2588235438" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTi-GR-EdW">
+                                                                <rect key="frame" x="140" y="490" width="210" height="75"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <string key="text">操控他人情緒
+Emotion Manipulation</string>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                                                <color key="textColor" red="0.19607841970000001" green="0.1725490093" blue="0.2588235438" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2o7-97-tuC">
+                                                                <rect key="frame" x="140" y="650" width="210" height="75"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <string key="text">掌控命運
+Master of Fate</string>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                                                <color key="textColor" red="0.19607841970000001" green="0.1725490093" blue="0.2588235438" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNA-Mx-oyk">
+                                                                <rect key="frame" x="140" y="810" width="210" height="75"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <string key="text">無敵的個人魅力
+Unstoppable Charisma</string>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                                                <color key="textColor" red="0.19607841970000001" green="0.1725490093" blue="0.2588235438" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="560" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3K-Cb-5Du">
+                                                                <rect key="frame" x="183" y="79" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSb-UE-a7w">
+                                                                <rect key="frame" x="239" y="125" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="數量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yuO-ln-OCi">
+                                                                <rect key="frame" x="191" y="114" width="46" height="48"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="solan" translatesAutoresizingMaskIntoConstraints="NO" id="Vkr-sb-Kav">
+                                                                <rect key="frame" x="137" y="74" width="37" height="36"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="bnw-Y6-Jaa">
+                                                                <rect key="frame" x="279" y="122" width="94" height="32"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <connections>
+                                                                    <action selector="stepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="h4w-ew-dqP"/>
+                                                                </connections>
+                                                            </stepper>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="620" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjf-3v-f9F">
+                                                                <rect key="frame" x="183" y="244" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7VM-1e-Tpa">
+                                                                <rect key="frame" x="239" y="289" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="數量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDl-IA-Ke2">
+                                                                <rect key="frame" x="191" y="278" width="46" height="48"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="solan" translatesAutoresizingMaskIntoConstraints="NO" id="fyd-XF-wUt">
+                                                                <rect key="frame" x="138" y="239" width="37" height="36"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <stepper opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="iXn-Pf-v7t">
+                                                                <rect key="frame" x="279" y="286" width="94" height="32"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <connections>
+                                                                    <action selector="stepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="qZa-xx-1Ws"/>
+                                                                </connections>
+                                                            </stepper>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="600" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XmX-kS-pAO">
+                                                                <rect key="frame" x="183" y="405" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y47-dU-84n">
+                                                                <rect key="frame" x="239" y="450" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="數量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfA-ik-4C3">
+                                                                <rect key="frame" x="191" y="439" width="46" height="48"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="solan" translatesAutoresizingMaskIntoConstraints="NO" id="58L-MX-vEU">
+                                                                <rect key="frame" x="138" y="400" width="37" height="36"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <stepper opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="LGc-el-qHm">
+                                                                <rect key="frame" x="279" y="447" width="94" height="32"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <connections>
+                                                                    <action selector="stepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="pJh-am-eXQ"/>
+                                                                </connections>
+                                                            </stepper>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="670" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jke-uS-tCo">
+                                                                <rect key="frame" x="183" y="558" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4DW-qb-Soe">
+                                                                <rect key="frame" x="239" y="603" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="數量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFl-UJ-HJM">
+                                                                <rect key="frame" x="191" y="592" width="46" height="48"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="solan" translatesAutoresizingMaskIntoConstraints="NO" id="c3w-Fv-3rg">
+                                                                <rect key="frame" x="138" y="553" width="37" height="36"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <stepper opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="okt-5Y-5DC">
+                                                                <rect key="frame" x="279" y="600" width="94" height="32"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <connections>
+                                                                    <action selector="stepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="abB-Ef-z02"/>
+                                                                </connections>
+                                                            </stepper>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="700" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6H-cO-DGj">
+                                                                <rect key="frame" x="183" y="725" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ab-U1-alS">
+                                                                <rect key="frame" x="239" y="770" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="數量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOs-fo-TcV">
+                                                                <rect key="frame" x="191" y="759" width="46" height="48"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="solan" translatesAutoresizingMaskIntoConstraints="NO" id="iQf-41-VYW">
+                                                                <rect key="frame" x="138" y="720" width="37" height="36"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <stepper opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="81m-DQ-gom">
+                                                                <rect key="frame" x="279" y="767" width="94" height="32"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <connections>
+                                                                    <action selector="stepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="qT8-Go-grq"/>
+                                                                </connections>
+                                                            </stepper>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="510" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S50-CA-wda">
+                                                                <rect key="frame" x="183" y="886" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4y-Kc-aJs">
+                                                                <rect key="frame" x="239" y="931" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="數量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yS-pR-7dd">
+                                                                <rect key="frame" x="191" y="920" width="46" height="48"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="solan" translatesAutoresizingMaskIntoConstraints="NO" id="TxO-mq-aV5">
+                                                                <rect key="frame" x="138" y="881" width="37" height="36"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <stepper opaque="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="STe-0e-Ass">
+                                                                <rect key="frame" x="279" y="928" width="94" height="32"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <connections>
+                                                                    <action selector="stepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="qQL-MF-Sl7"/>
+                                                                </connections>
+                                                            </stepper>
+                                                        </subviews>
+                                                        <viewLayoutGuide key="safeArea" id="gos-pC-7KL"/>
+                                                        <color key="backgroundColor" red="0.99607843137254903" green="0.99607843137254903" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" red="0.89803921568627454" green="0.96078431372549022" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.99607843137254903" green="0.99607843137254903" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <viewLayoutGuide key="contentLayoutGuide" id="kPN-0J-6le"/>
+                                                <viewLayoutGuide key="frameLayoutGuide" id="dx8-4e-DEx"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                                        <size key="value" width="0.0" height="970"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </scrollView>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="tef-e0-STj"/>
+                                        <color key="backgroundColor" red="0.91814285520000005" green="0.8974402547" blue="0.97967308760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="CQB-ut-TuC">
+                                        <rect key="frame" x="804" y="0.0" width="402" height="490"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nmm-nY-pw2">
+                                                <rect key="frame" x="0.0" y="0.0" width="402" height="490"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" id="fe4-Ys-s6Z" userLabel="View3">
+                                                        <rect key="frame" x="8" y="0.0" width="386" height="970"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="visionofuniversaltruth" translatesAutoresizingMaskIntoConstraints="NO" id="e4Z-wV-fT6">
+                                                                <rect key="frame" x="10" y="10" width="120" height="150"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="freedomfithinthedreamrealm" translatesAutoresizingMaskIntoConstraints="NO" id="P8f-hQ-1jG">
+                                                                <rect key="frame" x="10" y="170" width="120" height="150"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="becometheprotagonist" translatesAutoresizingMaskIntoConstraints="NO" id="ucH-Sh-F1q">
+                                                                <rect key="frame" x="10" y="330" width="120" height="150"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boundlessfortune" translatesAutoresizingMaskIntoConstraints="NO" id="PCH-An-Pfe">
+                                                                <rect key="frame" x="10" y="490" width="120" height="150"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="agelessbeauty" translatesAutoresizingMaskIntoConstraints="NO" id="Lg8-m5-6y8">
+                                                                <rect key="frame" x="10" y="650" width="120" height="150"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="overnightfame" translatesAutoresizingMaskIntoConstraints="NO" id="Jy7-rx-pz0">
+                                                                <rect key="frame" x="10" y="810" width="120" height="150"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4y-Xp-oZy">
+                                                                <rect key="frame" x="140" y="10" width="210" height="75"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <string key="text">看見宇宙真理
+Vision of Universal Truth</string>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                                                <color key="textColor" red="0.19607841970000001" green="0.1725490093" blue="0.2588235438" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbR-7n-0UV">
+                                                                <rect key="frame" x="140" y="170" width="210" height="75"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <string key="text">夢境中的自由世界
+Freedom Within the Dream Realm</string>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                                                <color key="textColor" red="0.19607841970000001" green="0.1725490093" blue="0.2588235438" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kpt-YA-cXB">
+                                                                <rect key="frame" x="140" y="330" width="210" height="75"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <string key="text">成為小說主角
+Become the Protagonist</string>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                                                <color key="textColor" red="0.19607841970000001" green="0.1725490093" blue="0.2588235438" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdL-8t-JZP">
+                                                                <rect key="frame" x="140" y="490" width="210" height="75"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <string key="text">無窮的資產
+Boundless Fortune</string>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                                                <color key="textColor" red="0.19607841970000001" green="0.1725490093" blue="0.2588235438" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mrx-tu-Wak">
+                                                                <rect key="frame" x="140" y="650" width="210" height="75"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <string key="text">凍齡的美貌
+Ageless Beauty</string>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                                                <color key="textColor" red="0.19607841970000001" green="0.1725490093" blue="0.2588235438" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CP-E2-brX">
+                                                                <rect key="frame" x="140" y="810" width="210" height="75"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <string key="text">一夕爆紅的名氣
+Overnight Fame</string>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                                                <color key="textColor" red="0.19607841970000001" green="0.1725490093" blue="0.2588235438" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="780" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxq-iv-n7Y">
+                                                                <rect key="frame" x="183" y="79" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFJ-dw-1RZ">
+                                                                <rect key="frame" x="239" y="125" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="數量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awf-ta-fPf">
+                                                                <rect key="frame" x="191" y="114" width="46" height="48"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="solan" translatesAutoresizingMaskIntoConstraints="NO" id="mzX-rL-pZB">
+                                                                <rect key="frame" x="138" y="74" width="37" height="36"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="0t5-Gj-xEH">
+                                                                <rect key="frame" x="279" y="122" width="94" height="32"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <connections>
+                                                                    <action selector="stepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="iWv-eU-iIb"/>
+                                                                </connections>
+                                                            </stepper>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="600" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DiB-sR-qpF">
+                                                                <rect key="frame" x="183" y="244" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neW-fi-tf1">
+                                                                <rect key="frame" x="239" y="289" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="數量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlw-yW-4ct">
+                                                                <rect key="frame" x="191" y="278" width="46" height="48"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="solan" translatesAutoresizingMaskIntoConstraints="NO" id="Edf-0y-3H3">
+                                                                <rect key="frame" x="138" y="239" width="37" height="36"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <stepper opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="jY5-0O-Dn6">
+                                                                <rect key="frame" x="279" y="286" width="94" height="32"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <connections>
+                                                                    <action selector="stepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="XUc-PM-ApP"/>
+                                                                </connections>
+                                                            </stepper>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="550" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yON-7w-X0h">
+                                                                <rect key="frame" x="183" y="405" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bse-xm-9rj">
+                                                                <rect key="frame" x="239" y="450" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="數量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAO-vb-hNz">
+                                                                <rect key="frame" x="191" y="439" width="46" height="48"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="solan" translatesAutoresizingMaskIntoConstraints="NO" id="GoZ-Pb-wsX">
+                                                                <rect key="frame" x="138" y="400" width="37" height="36"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <stepper opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="PQW-oH-k3n">
+                                                                <rect key="frame" x="279" y="447" width="94" height="32"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <connections>
+                                                                    <action selector="stepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="qDc-sm-rez"/>
+                                                                </connections>
+                                                            </stepper>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="950" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVH-6d-uAz">
+                                                                <rect key="frame" x="183" y="558" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTa-w3-yCT">
+                                                                <rect key="frame" x="239" y="603" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="數量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrp-rd-omh">
+                                                                <rect key="frame" x="191" y="592" width="46" height="48"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="solan" translatesAutoresizingMaskIntoConstraints="NO" id="kU3-nU-pMu">
+                                                                <rect key="frame" x="138" y="553" width="37" height="36"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <stepper opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Nbv-oN-Tbx">
+                                                                <rect key="frame" x="279" y="600" width="94" height="32"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <connections>
+                                                                    <action selector="stepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="8Y6-py-Xjn"/>
+                                                                </connections>
+                                                            </stepper>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="600" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szB-mw-BzM">
+                                                                <rect key="frame" x="183" y="725" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECL-et-VaL">
+                                                                <rect key="frame" x="239" y="770" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="數量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heK-oo-D2R">
+                                                                <rect key="frame" x="191" y="759" width="46" height="48"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="solan" translatesAutoresizingMaskIntoConstraints="NO" id="TKF-mo-UfO">
+                                                                <rect key="frame" x="138" y="720" width="37" height="36"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <stepper opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="msa-Cp-1DW">
+                                                                <rect key="frame" x="279" y="767" width="94" height="32"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <connections>
+                                                                    <action selector="stepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="t3V-Kx-MEF"/>
+                                                                </connections>
+                                                            </stepper>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="750" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aR7-hz-3Qn">
+                                                                <rect key="frame" x="183" y="886" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uqq-Cv-9W0">
+                                                                <rect key="frame" x="239" y="931" width="61" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="數量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYi-AV-YFN">
+                                                                <rect key="frame" x="191" y="920" width="46" height="48"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="solan" translatesAutoresizingMaskIntoConstraints="NO" id="Wad-f0-5Mu">
+                                                                <rect key="frame" x="138" y="881" width="37" height="36"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <stepper opaque="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="rKE-fv-c14">
+                                                                <rect key="frame" x="279" y="928" width="94" height="32"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <connections>
+                                                                    <action selector="stepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="pdX-L6-pKe"/>
+                                                                </connections>
+                                                            </stepper>
+                                                        </subviews>
+                                                        <viewLayoutGuide key="safeArea" id="Nab-EK-FUr"/>
+                                                        <color key="backgroundColor" red="0.94509803921568625" green="0.92549019607843142" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.94509803921568625" green="0.92549019607843142" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <viewLayoutGuide key="contentLayoutGuide" id="scO-vm-agR"/>
+                                                <viewLayoutGuide key="frameLayoutGuide" id="Vda-2Q-O3w"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                                        <size key="value" width="0.0" height="970"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </scrollView>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="zoM-a0-him"/>
+                                        <color key="backgroundColor" red="0.91814285520000005" green="0.8974402547" blue="0.97967308760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="d0i-Y8-2a0"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="QtM-Zg-dWP"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="1206" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="thP-qp-wpe"/>
+                                </connections>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="999999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLB-zU-jJd">
+                                <rect key="frame" x="54" y="808" width="103" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="24"/>
+                                <color key="textColor" red="0.1960784314" green="0.17254901959999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="solan" translatesAutoresizingMaskIntoConstraints="NO" id="DXg-o7-xUs">
+                                <rect key="frame" x="14" y="805" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSH-cL-jcL">
+                                <rect key="frame" x="175" y="801" width="100" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.60784313725490191" green="0.61960784313725492" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Buy">
+                                    <fontDescription key="titleFontDescription" name="Verdana-Bold" family="Verdana" pointSize="24"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tapBuy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eef-51-fxb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddh-vK-bod">
+                                <rect key="frame" x="281" y="801" width="100" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.60784313725490191" green="0.61960784313725492" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reset">
+                                    <fontDescription key="titleFontDescription" name="Verdana-Bold" family="Verdana" pointSize="24"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tapReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GcQ-uE-glo"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="a8W-8S-KJP">
+                                <rect key="frame" x="35" y="54" width="333" height="199"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pc-1h-0ri">
+                                <rect key="frame" x="71" y="73" width="254" height="163"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <segue destination="JAd-uK-Y4h" kind="show" id="XKu-LP-l4d"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="AQ5-OY-iZG"/>
+                    <connections>
+                        <outlet property="resteButton" destination="Ddh-vK-bod" id="dTf-7m-FDo"/>
+                        <outlet property="scrollView" destination="Er9-Re-93x" id="RHK-CP-qru"/>
+                        <outlet property="segmentedControl" destination="Lyd-iU-4Bk" id="mVF-ua-uff"/>
+                        <outlet property="totalLabel" destination="RLB-zU-jJd" id="i7i-Qf-1WN"/>
+                        <outletCollection property="lmqLabels" destination="bVC-1f-0Zg" collectionClass="NSMutableArray" id="5X6-wJ-WxT"/>
+                        <outletCollection property="lmqLabels" destination="jYH-vo-sLv" collectionClass="NSMutableArray" id="83G-yn-aE3"/>
+                        <outletCollection property="lmqLabels" destination="5eL-iB-jE4" collectionClass="NSMutableArray" id="V63-Jq-ziF"/>
+                        <outletCollection property="lmqLabels" destination="yh3-fK-3lC" collectionClass="NSMutableArray" id="51P-9c-is9"/>
+                        <outletCollection property="lmqLabels" destination="Au0-vi-CtS" collectionClass="NSMutableArray" id="jYC-Tv-BVI"/>
+                        <outletCollection property="lmqLabels" destination="5vv-Yv-RNk" collectionClass="NSMutableArray" id="Tn6-cR-fNV"/>
+                        <outletCollection property="pcqLabels" destination="lSb-UE-a7w" collectionClass="NSMutableArray" id="daD-3E-VK6"/>
+                        <outletCollection property="pcqLabels" destination="7VM-1e-Tpa" collectionClass="NSMutableArray" id="Bvv-tP-8IY"/>
+                        <outletCollection property="pcqLabels" destination="Y47-dU-84n" collectionClass="NSMutableArray" id="mtS-8z-h45"/>
+                        <outletCollection property="pcqLabels" destination="4DW-qb-Soe" collectionClass="NSMutableArray" id="Omw-a9-ILV"/>
+                        <outletCollection property="pcqLabels" destination="2ab-U1-alS" collectionClass="NSMutableArray" id="A2N-yn-2YF"/>
+                        <outletCollection property="pcqLabels" destination="n4y-Kc-aJs" collectionClass="NSMutableArray" id="V6j-IL-0W8"/>
+                        <outletCollection property="fbqLabels" destination="qFJ-dw-1RZ" collectionClass="NSMutableArray" id="NWY-xE-fHQ"/>
+                        <outletCollection property="fbqLabels" destination="neW-fi-tf1" collectionClass="NSMutableArray" id="cpb-gx-eKk"/>
+                        <outletCollection property="fbqLabels" destination="Bse-xm-9rj" collectionClass="NSMutableArray" id="Q0C-R5-FTb"/>
+                        <outletCollection property="fbqLabels" destination="qTa-w3-yCT" collectionClass="NSMutableArray" id="FU5-ni-wBf"/>
+                        <outletCollection property="fbqLabels" destination="ECL-et-VaL" collectionClass="NSMutableArray" id="yHj-Nh-QDH"/>
+                        <outletCollection property="fbqLabels" destination="Uqq-Cv-9W0" collectionClass="NSMutableArray" id="a1D-s4-0X3"/>
+                        <outletCollection property="lmsteppers" destination="BKJ-X2-XcJ" collectionClass="NSMutableArray" id="jIa-eg-uTV"/>
+                        <outletCollection property="lmsteppers" destination="VTZ-0I-R5a" collectionClass="NSMutableArray" id="OId-2T-png"/>
+                        <outletCollection property="lmsteppers" destination="xFo-gk-HgH" collectionClass="NSMutableArray" id="aBJ-wD-3F4"/>
+                        <outletCollection property="lmsteppers" destination="rt1-lA-z0g" collectionClass="NSMutableArray" id="nWq-DF-Aie"/>
+                        <outletCollection property="lmsteppers" destination="2Nu-sZ-4GZ" collectionClass="NSMutableArray" id="7PE-Ui-xfZ"/>
+                        <outletCollection property="lmsteppers" destination="jp9-XO-JeH" collectionClass="NSMutableArray" id="5g3-8F-ogV"/>
+                        <outletCollection property="pcsteppers" destination="bnw-Y6-Jaa" collectionClass="NSMutableArray" id="FNt-NV-MxP"/>
+                        <outletCollection property="pcsteppers" destination="iXn-Pf-v7t" collectionClass="NSMutableArray" id="UPs-6j-m9k"/>
+                        <outletCollection property="pcsteppers" destination="LGc-el-qHm" collectionClass="NSMutableArray" id="vND-GX-z1J"/>
+                        <outletCollection property="pcsteppers" destination="okt-5Y-5DC" collectionClass="NSMutableArray" id="mKA-Kd-Gcw"/>
+                        <outletCollection property="pcsteppers" destination="81m-DQ-gom" collectionClass="NSMutableArray" id="wfe-V6-fbv"/>
+                        <outletCollection property="pcsteppers" destination="STe-0e-Ass" collectionClass="NSMutableArray" id="PK8-ng-9ef"/>
+                        <outletCollection property="fbsteppers" destination="0t5-Gj-xEH" collectionClass="NSMutableArray" id="77w-Xg-3En"/>
+                        <outletCollection property="fbsteppers" destination="jY5-0O-Dn6" collectionClass="NSMutableArray" id="eNs-w6-pSQ"/>
+                        <outletCollection property="fbsteppers" destination="PQW-oH-k3n" collectionClass="NSMutableArray" id="f9i-Ns-vkj"/>
+                        <outletCollection property="fbsteppers" destination="Nbv-oN-Tbx" collectionClass="NSMutableArray" id="D1u-ky-Ole"/>
+                        <outletCollection property="fbsteppers" destination="msa-Cp-1DW" collectionClass="NSMutableArray" id="VZC-2j-J0W"/>
+                        <outletCollection property="fbsteppers" destination="rKE-fv-c14" collectionClass="NSMutableArray" id="CO8-zI-j30"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="694.02985074626861" y="45.995423340961096"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JAd-NS-fbQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DBU-GI-3IZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="arrowshape.backward.circle" catalog="system" id="Jq2-Vf-AoB">
+                        <rect key="frame" x="0.0" y="62" width="402" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.24625229840000001" green="0.22368210550000001" blue="0.33314168449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.24625229840000001" green="0.22368210550000001" blue="0.33314168449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="b7M-tp-ddm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LgG-KI-EF1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-225.37313432835819" y="45.995423340961096"/>
+        </scene>
+        <!--Introduce View Controller-->
+        <scene sceneID="cNl-1a-hDU">
+            <objects>
+                <viewController id="JAd-uK-Y4h" customClass="IntroduceViewController" customModule="HW8_SolanWishAtelier" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bg4-HD-jw3">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="PVg-ap-nyi">
+                                <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="ton-Em-HA0">
+                                <rect key="frame" x="35" y="54" width="333" height="199"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKU-eQ-299">
+                                <rect key="frame" x="71" y="73" width="254" height="163"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ntk-ZY-FzU">
+                                <rect key="frame" x="16" y="251" width="370" height="567.33333333333337"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">✨ Solan Wish Atelier✨ 
+    在你看不見的時空縫隙裡，存在著一間不對凡人開放的神秘店鋪。
+這裡不販售商品，只兌換願望——以你靈魂中最深刻的片段作為代價。
+
+    Solan Wish Atelier 是一間靈魂願望工坊，每一筆交易，都是命運的改寫。
+
+你可以：
+
+🔮 換得一段不會消逝的真愛
+💫 讀取別人內心真實的聲音
+🌌 重返你曾經錯過的某一天
+🕯 用忘記換取釋懷，用記得換取力量
+
+    在這裡，願望以「Solan」為貨幣——紫晶狀的靈魂結晶，由你的記憶、情感與選擇所凝結。沒有折扣，沒有退款。你只能選擇，並承擔。
+
+🕊 Solan Wish Atelier 提供：
+
+「願望選物清單」：
+   從18件商品中選擇命運交換
+「靈魂計價機制」：
+   計算你願望背後的代價
+「限時交易事件」：
+   滿月之夜限定願望開放
+
+    你準備好，以回憶與選擇為代價，進行一場願望的交易了嗎？
+
+來吧，打開盒子，簽下契約。
+
+🪄 Solan Wish Atelier——你命運中的那家店。</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nBI-Dh-rY3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kxj-FU-FEW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aok-XG-VhZ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1556.7164179104477" y="45.995423340961096"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="agelessbeauty" width="1024" height="1536"/>
+        <image name="arrowshape.backward.circle" catalog="system" width="128" height="123"/>
+        <image name="background" width="1024" height="1536"/>
+        <image name="becometheprotagonist" width="1024" height="1536"/>
+        <image name="boundlessfortune" width="1024" height="1536"/>
+        <image name="eideticmemory" width="1024" height="1536"/>
+        <image name="emotionmanipulation" width="1024" height="1536"/>
+        <image name="foresightofdanger" width="1024" height="1536"/>
+        <image name="forgetsomeone" width="1024" height="1536"/>
+        <image name="freedomfithinthedreamrealm" width="1024" height="1536"/>
+        <image name="friendshipunited" width="1024" height="1536"/>
+        <image name="masteroffate" width="1024" height="1536"/>
+        <image name="mindreading" width="1024" height="1536"/>
+        <image name="overnightfame" width="1024" height="1536"/>
+        <image name="petneverdie" width="1024" height="1536"/>
+        <image name="returntooneday" width="1024" height="1536"/>
+        <image name="solan" width="1024" height="1024"/>
+        <image name="someoneunderstandsyou" width="1024" height="1536"/>
+        <image name="title" width="612" height="408"/>
+        <image name="truelove" width="1024" height="1024"/>
+        <image name="unstoppablecharisma" width="1024" height="1536"/>
+        <image name="visionofuniversaltruth" width="1024" height="1536"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
